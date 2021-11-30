@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An awesome page for learn html, fun learning, getting certified aas a html professional">
+    <title>CSS Concepts practice</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <!-- different forms of h tags -->
+        <h1 style=" text-align: center; ">  Going through HTML5 Crashcourse </h1> <!--aligned the text to the center-->
+        <h2>The fundamentals treated</h2>
+        <h3>Some tricks also mentioned</h3>
+        <h4> <abbr title="Hypertext markup language" style="text-decoration:none;">Html</abbr>  only web is efinitely not that pleasant to look</h4> <!--"text-decoration property removes the dotted lines-->
+        <h5> <em>I am done with this</em></h5> <!--italized it-->
+        <h6>Why can't i skip to the part where i have all the requisite skill set and start making <strong>MONEY</strong></h6>
+
+        <!-- paragraphs "p" tag is used. this is a block level element others(div, h1---h6,p, form)-->
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores voluptatibus, sunt possimus quasi repellat error unde sit cupiditate nesciunt amet mollitia rerum tempora tempore laboriosam perferendis consequatur quidem, iure veniam.
+        </p>
+        
+        <!-- list: there are two types ordered and unordered list -->
+        
+        <!-- unordered list -->
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam expedita eaque, esse quam consequuntur, soluta quae ab, porro voluptate deserunt mollitia temporibus commodi! Distinctio tenetur ut quasi vero voluptatem sint.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam expedita eaque, esse quam consequuntur, soluta quae ab, porro voluptate deserunt mollitia temporibus commodi! Distinctio tenetur ut quasi vero voluptatem sint.</li>
+        </ul>
+
+        <!-- ordered list -->
+        <ol>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nobis totam blanditiis et amet natus ex, sed laudantium facilis doloremque exercitationem quas quis pariatur, dicta ab. Sint dolore odio eligendi?</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nobis totam blanditiis et amet natus ex, sed laudantium facilis doloremque exercitationem quas quis pariatur, dicta ab. Sint dolore odio eligendi?</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nobis totam blanditiis et amet natus ex, sed laudantium facilis doloremque exercitationem quas quis pariatur, dicta ab. Sint dolore odio eligendi?</li>
+        </ol>
+
+
+<hr><!--Just to demarcate the page -->
+<div style="padding-bottom: 10em;"></div> <!--used the "div" to separate and create space in between copyright declaration and the form-->
+
+
+
+
+        <!-- building a table -->
+        <table> 
+            <thead> <!--table header-->
+                 <tr> <!--table rows -->
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Class</th>
+                    <th>Email</th>
+                    <th>School</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Ewenike Chibuike</td>
+                    <td>23</td>
+                    <td>Five hundred level (Law)</td>
+                    <td>sopewenike@yahoo.com</td>
+                    <td>University of Lagos</td>
+                </tr>
+                <tr>
+                    <td>Ewen Chibu</td>
+                    <td>43</td>
+                    <td>Four hundred level (Law)</td>
+                    <td>Ewenchibu@yahoo.com</td>
+                    <td>University of Lagos</td>
+                </tr>
+                <tr>
+                    <td>Nike Ike</td>
+                    <td>27</td>
+                    <td>Three hundred level (Law)</td>
+                    <td>Nikeike@yahoo.com</td>
+                    <td>University of Lagos</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+
+<hr> <!--Just to demarcate the page -->
+<div style="padding-bottom: 10em;"></div> <!--used the "div" to separate and create space in between copyright declaration and the form-->
+
+
+
+        <section> <!--html5 structure-->
+
+            <form action="process" method="post"> <!--Creating a form-->
+                <div> <!--Wrapped it in div to make it start from another line-->
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname">
+                </div> <br> <!--used the "br" tag to create space between the form data-->
+
+                <div> 
+                <label for="lastname">Last name</label>
+                <input type="text" name="lastname">
+                </div> <br>
+
+                <div> 
+                <label for="age">Age</label>
+                <input type="number" value="40">
+                </div><br>
+
+                <div> 
+                <label for="email">Email</label>
+                <input type="email" placeholder="Please input your correct email address">
+                </div> <br>
+
+                <div>
+                <label for="gender">Gender</label>
+                <select name="gender" id="genders">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+                </div> <br>
+
+                <div>
+                    <label for="birthday">Birhtday:</label>
+                    <input type="date" name="birthday">
+                </div> <br>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                </div> <br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+    </main>
+    <hr>
+
+    <a href="images-css/holding-phone.jpg">
+    <img src="images-css/holding-phone.jpg" alt="holding-phone image">
+    </a>
+    <!-- <div style="padding-bottom: 10em;"></div> used the "div" to separate and create space in between copyright declaration and the form -->
+
+    <footer style="padding-top: 10em; padding-left: 35em;"> <!--just to align it to the center-->
+        copyright &copy; 2021
+    </footer>
+    <hr>
+</body>
+</html>
